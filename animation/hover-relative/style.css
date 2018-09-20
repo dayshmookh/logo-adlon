@@ -1,0 +1,100 @@
+.container {
+    width: 700px;
+    height: 700px;
+    perspective: 600px;
+}
+
+.a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 173.2px 100px;
+    transform-origin: 50% 173.2px;
+    position: relative;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: center;
+    transition: border-color 0.5s ease-in-out, transform 1s ease-in-out;
+}
+
+#a1 {
+    transform: rotateZ(0deg);
+    left: 200px;
+    top: 0px;
+    z-index: 999;
+}
+
+#b1 {
+    transform: rotateZ(-120deg);
+    left: 150px;
+    top: -86.6px;
+    z-index: 998;
+}
+
+#b2 {
+    transform: rotateZ(180deg);
+    left: 200px;
+    top: -346.4px;
+    z-index: 998;
+}
+
+#b3 {
+    transform: rotateZ(120deg);
+    left: 250px;
+    top: -433px;
+    z-index: 998;
+}
+
+#c1 {
+    transform: rotateZ(-120deg);
+    left: 50px;
+    top: -433px;
+    z-index: 999;
+}
+
+#c2 {
+    transform: rotateZ(-180deg);
+    left: 100px;
+    top: -692.8px;
+    z-index: 998;
+}
+
+#c3 {
+    transform: rotateZ(180deg);
+    left: 300px;
+    top: -866px;
+    z-index: 998;
+}
+
+#c4 {
+    transform: rotateZ(120deg);
+    left: 350px;
+    top: -952.6px;
+    z-index: 999;
+}
+
+.color1 {
+    border-color: transparent transparent #f34234 transparent;
+}
+
+.color2 {
+    border-color: transparent transparent #c62525 transparent;
+}
+
+.color3 {
+    border-color: transparent transparent #e63632 transparent;
+}
+
+.color4 {
+    border-color: transparent transparent #fe6e3f transparent;
+}
